@@ -1,1 +1,29 @@
-//
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.container_1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+nav.navbar {
+  margin-bottom: 20px;
+}
+
+body {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.home {
+  border-radius: 0.3rem;
+  background-color: rgba(grey,0.15);
+  padding: 2rem 2rem;
+}
+.ziti {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
