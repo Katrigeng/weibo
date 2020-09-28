@@ -2,17 +2,33 @@
 @section('title','注册')
 
 @section('content')
-<div class="container">
-  <form method="post" action="">
-    <div class="form-group">
-      <label for="username"></label>
-      <input type="text" class="form-control" name="username" id="username" placeholder="请输入名字">
+<div class="offset-md-2 col-md-8">
+  <div class="card">
+    <div class="card-header">
+      <h5>注册</h5>
     </div>
-    <div class="form-group">
-      <label for="email"></label>
-      <input type="text" class="form-control" name="email" id="email" placeholder="请输入邮箱">
+    <div class="card-body">
+    <form method="post" action="{{ route('users.store') }}">
+        <div class="form-group">
+          <label for="username">名称：</label>
+        <input type="text" class="form-control" name="username" id="username" value="{{ old('username') }}">
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱：</label>
+          <input type="text" class="form-control" name="email" id="email" value="{{ old('email') }}">
+        </div>
+        <div class="form-group">
+          <label for="password">密码：</label>
+          <input type="password" class="form-control" name="password" id="password" value="{{ old('password') }}">
+        </div>
+        <div class="form-group">
+          <label for="password_confirmation">确认密码：</label>
+          <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" value="{{ old('password_confirmation') }}">
+        </div>
+        <button type="submit" class="btn btn-primary">注册</button>
+      </form>
     </div>
-  </form>
+  </div>
 </div>
 
 @endsection
