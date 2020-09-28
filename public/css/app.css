@@ -10902,9 +10902,12 @@ a.text-dark:focus {
 .container_1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav.navbar {
