@@ -10942,3 +10942,20 @@ footer a:hover {
   color: #222;
 }
 
+section.section_info {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.section_info .gravatar {
+  border-radius: 50%;
+  max-width: 75px;
+}
+
+section.section_info div {
+  font-size: 1.4em;
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+
