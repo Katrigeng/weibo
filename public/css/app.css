@@ -10959,3 +10959,9 @@ section.section_info div {
   letter-spacing: -1px;
 }
 
+.errorInfo {
+  font-weight: bold;
+  color: #d13232;
+  background-color: rgba(211, 134, 134, 0.3);
+}
+
