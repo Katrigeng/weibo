@@ -9,9 +9,10 @@
     </div>
     <div class="card-body">
     <form method="post" action="{{ route('users.store') }}">
+      {{ csrf_field() }}
         <div class="form-group">
-          <label for="username">名称：</label>
-        <input type="text" class="form-control" name="username" id="username" value="{{ old('username') }}">
+          <label for="name">名称：</label>
+        <input type="text" class="form-control" name="name" id="name" value="{{ old('name') }}">
         </div>
         <div class="form-group">
           <label for="email">邮箱：</label>
