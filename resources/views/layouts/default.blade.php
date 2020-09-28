@@ -8,18 +8,14 @@
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
+  @include('layouts/_header')
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="/">Weibo App</a>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/">帮助</a></li>
-        <li class="nav-item"><a class="nav-link" href="/">登录</a></li>
-      </ul>
-    </div>
-  </nav>
   <div class="container">
-    @yield('content')
+    <div class="col-md-10 offset-md-1 ">
+      @yield('content')
+      @include('layouts/_footer')
+    </div>
+
   </div>
 
 </body>

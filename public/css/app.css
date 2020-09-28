@@ -10899,17 +10899,6 @@ a.text-dark:focus {
   }
 }
 
-.container_1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 nav.navbar {
   margin-bottom: 20px;
 }
@@ -10923,10 +10912,33 @@ body {
   border-radius: 0.3rem;
   background-color: rgba(128, 128, 128, 0.15);
   padding: 2rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .ziti {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+footer {
+  margin-top: 45px;
+  border-top: solid 1px rgba(128, 128, 128, 0.15);
+  padding-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+footer img {
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
 }
 
