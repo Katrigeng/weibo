@@ -20,3 +20,6 @@ use Illuminate\Support\Facades\Route;
 route::get('/','StaticPageController@home')->name('home');
 route::get('/help','StaticPageController@help')->name('help');
 route::get('/about','StaticPageController@about')->name('about');
+
+//注册
+route::get('/signup','UsersController@create')->name('signup');
