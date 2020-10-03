@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+//测试
+route::get('/test','TestController@test');
+
 route::get('/','StaticPageController@home')->name('home');
 route::get('/help','StaticPageController@help')->name('help');
 route::get('/about','StaticPageController@about')->name('about');
