@@ -11,7 +11,7 @@
                 'database'   => substr($url['path'],1),
                 'user'       => $url['user'],
                 'pass'       => $url['pass'],
-                'port'       => $url['port'],
+                // 'port'       => $url['port'],
             ];
         }else{
 
