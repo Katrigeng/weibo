@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 $db_config = get_db_config();
-dump($db_config);exit;
+
 return [
 
     /*
@@ -70,9 +70,9 @@ return [
             'driver' => 'pgsql',
             'host' => $db_config['host'],
             'port' => $db_config['port'],
-            'database' => $db_config['host'],
-            'username' => $db_config['host'],
-            'password' => $db_config['host'],
+            'database' => $db_config['database'],
+            'username' => $db_config['user'],
+            'password' => $db_config['pass'],
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
