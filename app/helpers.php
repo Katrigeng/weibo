@@ -11,6 +11,7 @@
                 'database'   => substr($url['path'],1),
                 'user'       => $url['user'],
                 'pass'       => $url['pass'],
+                'port'       => $url['port'],
             ];
         }else{
 
@@ -18,7 +19,7 @@
             return [
                 'connection' => env('DB_CONNECTION','mysql'),
                 'host'       => env('DB_HOST','localhost'),
-                'database'       => env('DB_DATABASE','forge'),
+                'database'   => env('DB_DATABASE','forge'),
                 'user'       => env('DB_USERNAME','forge'),
                 'pass'       => env('DB_PASSWORD',''),
             ];
