@@ -26,7 +26,7 @@
           </div>
 
           <div class="form-group">
-            <input type="checkbox" id= "remember_token"  name="remember_token">
+            <input type="checkbox" id= "remember_token"  name="remember_token" checked="checked">
             <label for="remember_token">记住我</label>
           </div>
 
