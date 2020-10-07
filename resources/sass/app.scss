@@ -66,3 +66,21 @@ section.section_info {
   color: rgb(209, 50, 50);
   background-color: rgba(211, 134, 134,0.3);
 }
+
+.tip{
+  border: 1px solid transparent;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.tip-success {
+  color: #0a8827;
+  background-color: #b5e4c0;
+}
+
+.tip-danger {
+  color: #b74a96;
+  background-color: #e8bccf;
+}

@@ -17,6 +17,7 @@ class UsersController extends Controller
         return view('users.show',compact('user'));
     }
 
+    //验证并保存注册信息
     public function store(Request $request){
         $this->validate($request,[
             'name' => 'required|unique:users|max:50',

@@ -18,16 +18,16 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //测试
-route::get('/test','TestController@test');
+Route::get('/test','TestController@test');
 
-route::get('/','StaticPageController@home')->name('home');
-route::get('/help','StaticPageController@help')->name('help');
-route::get('/about','StaticPageController@about')->name('about');
+Route::get('/','StaticPageController@home')->name('home');
+Route::get('/help','StaticPageController@help')->name('help');
+Route::get('/about','StaticPageController@about')->name('about');
 
 //注册
-route::get('/signup','UsersController@create')->name('signup');
+Route::get('/signup','UsersController@create')->name('signup');
 
-route::resource('users','UsersController');
+Route::resource('users','UsersController');
 // 上面resource()方法的代码等同于下面所有：
 // Route::get('/users', 'UsersController@index')->name('users.index');
 // Route::get('/users/create', 'UsersController@create')->name('users.create');
@@ -36,3 +36,7 @@ route::resource('users','UsersController');
 // Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
 // Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
 // Route::delete('/users/{user}', 'UsersController@destroy')->name('users.destroy');
+
+Route::get('/login','SessionsController@create')->name('login');
+Route::post('/login','SessionsController@store')->name('login');
+Route::delete('/logout','SessionsController@destroy')->name('logout');
