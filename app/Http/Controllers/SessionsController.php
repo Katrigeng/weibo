@@ -19,7 +19,7 @@ class SessionsController extends Controller
             'password' => 'required|min:6',
         ]);
 
-        if(Auth::attempt($userInfo)){
+        if(Auth::attempt($userInfo,$request->has('remember_token'))){
             session()->flash('success','欢迎回来！');
             return redirect()->route('users.show',[Auth::user()]);
         }else{
